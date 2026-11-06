@@ -1,0 +1,20 @@
+
+package sistemagestionpedidos;
+
+public class Usuario implements Suscriptor {
+
+    private String nombre;
+
+    public Usuario(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    @Override
+    public void notificar(String mensaje) {
+        System.out.println("Notificación para " + nombre + ": " + mensaje);
+    }
+}
